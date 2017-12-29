@@ -1,0 +1,8 @@
+name: ParticleModel
+main: ua.coolboy.particlemodel.ParticleModel
+version: 1.0
+commands:
+  particlemodel:
+    aliases: [pam, pmodel]
+    #usage: /<command> 
+    default: op
