@@ -10,4 +10,4 @@ Loads model from `plugins/ParticleModels/name/name.obj`
 
 `/pam draw name`
 
-Draws model at 0, 100, 10 (edit this at `CommandParser:25`)
+Draws model at 0, 100, 10 (hardcoded, edit this at `CommandParser:25`)
