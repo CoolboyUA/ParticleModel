@@ -1,4 +1,4 @@
-# ParticleModel
+# ParticleModels
 
 Convert .obj models to particles
 
