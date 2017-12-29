@@ -3,6 +3,6 @@ main: ua.coolboy.particlemodels.ParticleModels
 version: 1.0
 commands:
   particlemodel:
-    aliases: [pam, pmodel]
+    aliases: [particlemoders, pam, pmodel]
     #usage: /<command> 
     default: op
