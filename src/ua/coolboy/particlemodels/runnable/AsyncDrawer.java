@@ -1,11 +1,11 @@
-package ua.coolboy.particlemodel.runnable;
+package ua.coolboy.particlemodels.runnable;
 
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import org.bukkit.scheduler.BukkitRunnable;
-import ua.coolboy.particlemodel.drawer.Drawable;
-import ua.coolboy.particlemodel.utils.LogUtil;
+import ua.coolboy.particlemodels.drawer.Drawable;
+import ua.coolboy.particlemodels.utils.LogUtil;
 
 public class AsyncDrawer extends BukkitRunnable {
 

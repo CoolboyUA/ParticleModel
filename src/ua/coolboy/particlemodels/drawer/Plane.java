@@ -1,11 +1,11 @@
-package ua.coolboy.particlemodel.drawer;
+package ua.coolboy.particlemodels.drawer;
 
 import com.owens.oobjloader.builder.FaceVertex;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.bukkit.util.Vector;
-import ua.coolboy.particlemodel.utils.VertexUtil;
+import ua.coolboy.particlemodels.utils.VertexUtil;
 
 public abstract class Plane implements Drawable{
 

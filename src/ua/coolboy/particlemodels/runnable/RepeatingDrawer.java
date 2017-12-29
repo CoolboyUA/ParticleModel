@@ -1,13 +1,13 @@
-package ua.coolboy.particlemodel.runnable;
+package ua.coolboy.particlemodels.runnable;
 
 import org.bukkit.Location;
 import org.bukkit.scheduler.BukkitRunnable;
-import ua.coolboy.particlemodel.ParticleModel;
-import ua.coolboy.particlemodel.drawer.Drawer;
+import ua.coolboy.particlemodels.ParticleModels;
+import ua.coolboy.particlemodels.drawer.Drawer;
 
 public class RepeatingDrawer extends BukkitRunnable {
 
-    ParticleModel plugin = ParticleModel.getInstance();
+    ParticleModels plugin = ParticleModels.getInstance();
     
     Drawer drawer;
     Location location;

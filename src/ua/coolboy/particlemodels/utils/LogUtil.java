@@ -1,12 +1,12 @@
-package ua.coolboy.particlemodel.utils;
+package ua.coolboy.particlemodels.utils;
 
 import java.util.logging.Logger;
 import org.bukkit.Bukkit;
-import ua.coolboy.particlemodel.ParticleModel;
+import ua.coolboy.particlemodels.ParticleModels;
 
 public abstract class LogUtil {
     
-    private static boolean log = ParticleModel.log;
+    private static boolean log = ParticleModels.log;
     private static Logger logger = Bukkit.getLogger();
     
     public static void log(String string) {

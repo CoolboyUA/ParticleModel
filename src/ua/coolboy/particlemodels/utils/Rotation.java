@@ -1,4 +1,4 @@
-package ua.coolboy.particlemodel.utils;
+package ua.coolboy.particlemodels.utils;
 
 import java.io.Serializable;
 

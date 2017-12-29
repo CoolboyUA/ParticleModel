@@ -1,4 +1,4 @@
-package ua.coolboy.particlemodel.drawer;
+package ua.coolboy.particlemodels.drawer;
 
 import java.util.List;
 import java.util.concurrent.Callable;

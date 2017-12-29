@@ -1,4 +1,4 @@
-package ua.coolboy.particlemodel;
+package ua.coolboy.particlemodels;
 
 import com.owens.oobjloader.builder.Build;
 import com.owens.oobjloader.parser.Parse;
@@ -12,12 +12,12 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
-import ua.coolboy.particlemodel.command.CommandParser;
-import ua.coolboy.particlemodel.drawer.Drawer;
+import ua.coolboy.particlemodels.command.CommandParser;
+import ua.coolboy.particlemodels.drawer.Drawer;
 
-public class ParticleModel extends JavaPlugin {
+public class ParticleModels extends JavaPlugin {
 
-    private static ParticleModel plugin;
+    private static ParticleModels plugin;
     public static final double MIN_DISTANCE = 0.3;
     public static boolean log = true;
     private static final HashMap<String, Drawer> MODELS = new HashMap<>();
@@ -25,7 +25,7 @@ public class ParticleModel extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        ParticleModel.plugin = this;
+        ParticleModels.plugin = this;
         if (!getDataFolder().exists()) {
             getDataFolder().mkdir();
         }
@@ -39,7 +39,7 @@ public class ParticleModel extends JavaPlugin {
         return true;
     }
 
-    public static ParticleModel getInstance() {
+    public static ParticleModels getInstance() {
         return plugin;
     }
 

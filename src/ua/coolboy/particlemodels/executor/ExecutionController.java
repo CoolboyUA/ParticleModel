@@ -1,7 +1,7 @@
-package ua.coolboy.particlemodel.executor;
+package ua.coolboy.particlemodels.executor;
 
 import java.util.HashMap;
-import ua.coolboy.particlemodel.drawer.Drawer;
+import ua.coolboy.particlemodels.drawer.Drawer;
 
 public abstract class ExecutionController {
 

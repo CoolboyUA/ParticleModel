@@ -1,18 +1,18 @@
-package ua.coolboy.particlemodel.utils;
+package ua.coolboy.particlemodels.utils;
 
 import com.owens.oobjloader.builder.VertexGeometric;
 import java.util.ArrayList;
 import java.util.List;
 import org.bukkit.util.EulerAngle;
 import org.bukkit.util.Vector;
-import ua.coolboy.particlemodel.ParticleModel;
-import ua.coolboy.particlemodel.drawer.Plane;
+import ua.coolboy.particlemodels.ParticleModels;
+import ua.coolboy.particlemodels.drawer.Plane;
 
 public final class VertexUtil {
 
     public static List<Vector> connectPoints(Vector one, Vector two, /*float scale,*/ boolean optimize) {
         List<Vector> vectors = new ArrayList<>();
-        int step = (int) (one.distance(two) / ParticleModel.MIN_DISTANCE);
+        int step = (int) (one.distance(two) / ParticleModels.MIN_DISTANCE);
         for (int i = 0; i < step; i++) {
             float percent = (float) i / step;
             vectors.add(one.clone().add(two.clone().subtract(one).multiply(percent)));//.multiply(scale));
@@ -29,7 +29,7 @@ public final class VertexUtil {
         int optimized = 0;
         for (int n = 0; n < iterations; n++) {
             for (int i = 0; i < points.size() - 1; i++) {
-                if (points.get(i).distance(points.get(i + 1)) < ParticleModel.MIN_DISTANCE) {
+                if (points.get(i).distance(points.get(i + 1)) < ParticleModels.MIN_DISTANCE) {
                     points.remove(i + 1);
                     optimized++;
                 }

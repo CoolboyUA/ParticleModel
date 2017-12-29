@@ -1,5 +1,5 @@
-name: ParticleModel
-main: ua.coolboy.particlemodel.ParticleModel
+name: ParticleModels
+main: ua.coolboy.particlemodels.ParticleModels
 version: 1.0
 commands:
   particlemodel:

@@ -1,31 +1,31 @@
-package ua.coolboy.particlemodel.drawer;
+package ua.coolboy.particlemodels.drawer;
 
 import com.owens.oobjloader.builder.Build;
 import com.owens.oobjloader.builder.Face;
-import ua.coolboy.particlemodel.executor.ExecutionController;
+import ua.coolboy.particlemodels.executor.ExecutionController;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import org.bukkit.Location;
-import ua.coolboy.particlemodel.ParticleModel;
-import ua.coolboy.particlemodel.executor.ExecutionType;
-import ua.coolboy.particlemodel.runnable.RepeatingDrawer;
-import ua.coolboy.particlemodel.utils.LogUtil;
-import ua.coolboy.particlemodel.utils.VertexUtil;
+import ua.coolboy.particlemodels.ParticleModels;
+import ua.coolboy.particlemodels.executor.ExecutionType;
+import ua.coolboy.particlemodels.runnable.RepeatingDrawer;
+import ua.coolboy.particlemodels.utils.LogUtil;
+import ua.coolboy.particlemodels.utils.VertexUtil;
 
 public class Drawer {
 
     private Build build;
     private List<Drawable> drawables;
-    private ParticleModel plugin;
+    private ParticleModels plugin;
     private String name = "Unknown model";
     private float scale = 1;
     private Location location;
 
     public Drawer(Build build) {
         this.build = build;
-        this.plugin = ParticleModel.getInstance();
+        this.plugin = ParticleModels.getInstance();
         drawables = new ArrayList<>();
         parseBuild();
     }

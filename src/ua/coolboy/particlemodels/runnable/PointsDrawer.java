@@ -1,4 +1,4 @@
-package ua.coolboy.particlemodel.runnable;
+package ua.coolboy.particlemodels.runnable;
 
 import java.util.List;
 import org.bukkit.Location;
@@ -6,7 +6,7 @@ import org.bukkit.Particle;
 import org.bukkit.World;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
-import ua.coolboy.particlemodel.drawer.Drawable;
+import ua.coolboy.particlemodels.drawer.Drawable;
 
 public class PointsDrawer extends BukkitRunnable {
     

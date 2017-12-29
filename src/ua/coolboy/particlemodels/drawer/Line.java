@@ -1,4 +1,4 @@
-package ua.coolboy.particlemodel.drawer;
+package ua.coolboy.particlemodels.drawer;
 
 import com.owens.oobjloader.builder.VertexGeometric;
 import java.util.List;
@@ -7,7 +7,7 @@ import org.bukkit.Location;
 import org.bukkit.Particle;
 import org.bukkit.util.EulerAngle;
 import org.bukkit.util.Vector;
-import ua.coolboy.particlemodel.utils.VertexUtil;
+import ua.coolboy.particlemodels.utils.VertexUtil;
 
 public class Line implements Drawable {
 

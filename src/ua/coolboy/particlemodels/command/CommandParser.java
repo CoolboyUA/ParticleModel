@@ -1,15 +1,15 @@
-package ua.coolboy.particlemodel.command;
+package ua.coolboy.particlemodels.command;
 
 import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.entity.Player;
-import ua.coolboy.particlemodel.ParticleModel;
-import ua.coolboy.particlemodel.drawer.Drawer;
-import ua.coolboy.particlemodel.utils.ChatUtil;
+import ua.coolboy.particlemodels.ParticleModels;
+import ua.coolboy.particlemodels.drawer.Drawer;
+import ua.coolboy.particlemodels.utils.ChatUtil;
 
 public abstract class CommandParser {
 
-    private static ParticleModel plugin = ParticleModel.getInstance();
+    private static ParticleModels plugin = ParticleModels.getInstance();
 
     public static boolean parse(Player player, Command cmd, String commandLabel, String[] args) {
         if (args.length == 2 && args[0].equals("load")) {
@@ -20,7 +20,7 @@ public abstract class CommandParser {
         }
 
         if (args.length == 2 && args[0].equals("draw")) {
-            Drawer model = ParticleModel.getModel(args[1]);
+            Drawer model = ParticleModels.getModel(args[1]);
             if (model != null) {
                 Location loc = new Location(player.getWorld(), 0, 100, 10);
                 model.draw(loc);
@@ -34,7 +34,7 @@ public abstract class CommandParser {
         }
         
         if(args.length == 2 && args[0].equals("repeat")) {
-            Drawer model = ParticleModel.getModel(args[1]);
+            Drawer model = ParticleModels.getModel(args[1]);
             if (model != null) {
                 Location loc = new Location(player.getWorld(), 0, 100, 10);
                 model.repeat(loc);
@@ -42,7 +42,7 @@ public abstract class CommandParser {
         }
         
         if(args.length == 3 && args[0].equals("scale")) {
-            Drawer model = ParticleModel.getModel(args[1]);
+            Drawer model = ParticleModels.getModel(args[1]);
             if (model != null) {
                 model.scale(Float.parseFloat(args[2]));
             }

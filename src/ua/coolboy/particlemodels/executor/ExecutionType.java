@@ -1,4 +1,4 @@
-package ua.coolboy.particlemodel.executor;
+package ua.coolboy.particlemodels.executor;
 
 public enum ExecutionType {
 

@@ -1,10 +1,10 @@
-package ua.coolboy.particlemodel.configuration;
+package ua.coolboy.particlemodels.configuration;
 
 import java.io.File;
 import java.io.IOException;
 import org.bukkit.configuration.file.YamlConfiguration;
-import ua.coolboy.particlemodel.ParticleModel;
-import ua.coolboy.particlemodel.utils.LogUtil;
+import ua.coolboy.particlemodels.ParticleModels;
+import ua.coolboy.particlemodels.utils.LogUtil;
 
 public class Configs {
     
@@ -12,7 +12,7 @@ public class Configs {
     private static File mainFile;
     
     private static File folder;
-    private static final ParticleModel PLUGIN = ParticleModel.getInstance();
+    private static final ParticleModels PLUGIN = ParticleModels.getInstance();
     
     public Configs() {
         folder = PLUGIN.getDataFolder();

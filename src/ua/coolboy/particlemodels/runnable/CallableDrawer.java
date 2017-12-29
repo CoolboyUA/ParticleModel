@@ -1,9 +1,9 @@
-package ua.coolboy.particlemodel.runnable;
+package ua.coolboy.particlemodels.runnable;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
-import ua.coolboy.particlemodel.drawer.Drawable;
+import ua.coolboy.particlemodels.drawer.Drawable;
 
 public class CallableDrawer implements Callable<Void> {
     

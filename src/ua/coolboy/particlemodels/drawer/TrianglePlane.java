@@ -1,4 +1,4 @@
-package ua.coolboy.particlemodel.drawer;
+package ua.coolboy.particlemodels.drawer;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,8 +8,8 @@ import org.bukkit.Location;
 import org.bukkit.Particle;
 import org.bukkit.util.EulerAngle;
 import org.bukkit.util.Vector;
-import ua.coolboy.particlemodel.ParticleModel;
-import ua.coolboy.particlemodel.utils.VertexUtil;
+import ua.coolboy.particlemodels.ParticleModels;
+import ua.coolboy.particlemodels.utils.VertexUtil;
 
 public class TrianglePlane extends Plane implements Drawable {
 
@@ -74,7 +74,7 @@ public class TrianglePlane extends Plane implements Drawable {
     }
 
     private int optimizeIterations(double distance) {
-        return (int) Math.round(distance / ParticleModel.MIN_DISTANCE) + 1;
+        return (int) Math.round(distance / ParticleModels.MIN_DISTANCE) + 1;
     }
 
     @Override
