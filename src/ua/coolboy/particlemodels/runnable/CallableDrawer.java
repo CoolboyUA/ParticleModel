@@ -6,7 +6,7 @@ import java.util.concurrent.Callable;
 import ua.coolboy.particlemodels.drawer.Drawable;
 
 public class CallableDrawer implements Callable<Void> {
-    
+    //Used in executor
     private List<Drawable> drawables = new ArrayList<>();
     
     public CallableDrawer(Drawable drawable) {

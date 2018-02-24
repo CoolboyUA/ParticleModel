@@ -25,7 +25,7 @@ public final class VertexUtil {
         }
     }
 
-    public static List<Vector> optimize(List<Vector> points, int iterations) {
+    public static List<Vector> optimize(List<Vector> points, int iterations) { //Can break many small models, needs refinement
         int optimized = 0;
         for (int n = 0; n < iterations; n++) {
             for (int i = 0; i < points.size() - 1; i++) {
@@ -39,7 +39,7 @@ public final class VertexUtil {
         return points;
     }
 
-    public static List<Vector> cutSide(Plane.Side side, int count) {
+    public static List<Vector> cutSide(Plane.Side side, int count) { //cuts plane into points
         List<Vector> vectors = new ArrayList<>();
         for (int i = 0; i < count; i++) {
             float percent = (float) i / count;
@@ -47,7 +47,7 @@ public final class VertexUtil {
         }
         return vectors;
     }
-
+    //connects points
     public static List<Vector> connectPoints(VertexGeometric one, VertexGeometric two, /*float scale,*/ boolean optimize) {
         return connectPoints(toVector(one), toVector(two),/* scale,*/ optimize);
     }

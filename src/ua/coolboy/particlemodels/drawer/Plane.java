@@ -8,7 +8,7 @@ import org.bukkit.util.Vector;
 import ua.coolboy.particlemodels.utils.VertexUtil;
 
 public abstract class Plane implements Drawable{
-
+    //Abstract class to determine plane vertices
     public static Plane fromVectors(Drawer drawer, List<Vector> vertices) {
         if (vertices.size() > 4) {
             throw new UnsupportedOperationException("Polygons with 5 and more vertices aren't supported!");

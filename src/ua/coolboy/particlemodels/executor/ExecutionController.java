@@ -5,7 +5,7 @@ import ua.coolboy.particlemodels.drawer.Drawer;
 
 public abstract class ExecutionController {
 
-    private static final HashMap<Drawer, ExecutionType> busy = new HashMap<>();
+    private static final HashMap<Drawer, ExecutionType> busy = new HashMap<>(); //if drawer doing something, we'll know
     
     public static boolean isBusy(Drawer drawer) {
         return busy.keySet().contains(drawer);

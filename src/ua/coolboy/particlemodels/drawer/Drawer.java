@@ -15,7 +15,7 @@ import ua.coolboy.particlemodels.utils.LogUtil;
 import ua.coolboy.particlemodels.utils.VertexUtil;
 
 public class Drawer {
-
+    //This thing creates particles
     private Build build;
     private List<Drawable> drawables;
     private ParticleModels plugin;
@@ -27,7 +27,7 @@ public class Drawer {
         this.build = build;
         this.plugin = ParticleModels.getInstance();
         drawables = new ArrayList<>();
-        parseBuild();
+        parseBuild(); //Maybe async?
     }
 
     public Drawer(Build build, String name) {
@@ -50,7 +50,7 @@ public class Drawer {
     }
 
     public void scale(float scale) {
-        this.scale *= scale;
+        this.scale *= scale; //set relative scale
         ExecutionController.setBusy(this, ExecutionType.SCALING);
         for (Drawable draw : drawables) {
             draw.scale(scale);
@@ -73,7 +73,7 @@ public class Drawer {
             LogUtil.log(name + " is busy (" + ExecutionController.getType(this).toString() + ")");
         }
         
-        ExecutorService executor = Executors.newFixedThreadPool(4);
+        ExecutorService executor = Executors.newFixedThreadPool(4);//Maybe try cached pool?
          try {
             executor.invokeAll(drawables);
         } catch (InterruptedException ex) {

@@ -10,7 +10,7 @@ import org.bukkit.util.Vector;
 import ua.coolboy.particlemodels.utils.VertexUtil;
 
 public class Line implements Drawable {
-
+    //Currently not used
     private Vector one;
     private Vector two;
     private List<Vector> points;

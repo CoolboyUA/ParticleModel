@@ -6,7 +6,7 @@ import ua.coolboy.particlemodels.ParticleModels;
 import ua.coolboy.particlemodels.drawer.Drawer;
 
 public class RepeatingDrawer extends BukkitRunnable {
-
+    //Used for repeating
     ParticleModels plugin = ParticleModels.getInstance();
     
     Drawer drawer;

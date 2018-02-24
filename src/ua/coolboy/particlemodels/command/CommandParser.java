@@ -33,7 +33,7 @@ public abstract class CommandParser {
             ChatUtil.send(player, "&6Processors: &a" + Runtime.getRuntime().availableProcessors());
         }
         
-        if(args.length == 2 && args[0].equals("repeat")) {
+        if(args.length == 2 && args[0].equals("repeat")) { //can start massive client lag
             Drawer model = ParticleModels.getModel(args[1]);
             if (model != null) {
                 Location loc = new Location(player.getWorld(), 0, 100, 10);
@@ -41,7 +41,7 @@ public abstract class CommandParser {
             }
         }
         
-        if(args.length == 3 && args[0].equals("scale")) {
+        if(args.length == 3 && args[0].equals("scale")) { //scales model (be careful with optimization!)
             Drawer model = ParticleModels.getModel(args[1]);
             if (model != null) {
                 model.scale(Float.parseFloat(args[2]));

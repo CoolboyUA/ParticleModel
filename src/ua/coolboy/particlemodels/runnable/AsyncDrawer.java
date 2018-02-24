@@ -8,7 +8,7 @@ import ua.coolboy.particlemodels.drawer.Drawable;
 import ua.coolboy.particlemodels.utils.LogUtil;
 
 public class AsyncDrawer extends BukkitRunnable {
-
+    //Class not used
     private static ExecutorService executor = Executors.newFixedThreadPool(1);
     private List<Drawable> drawables;
     

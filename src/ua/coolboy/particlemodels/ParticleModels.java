@@ -21,7 +21,7 @@ public class ParticleModels extends JavaPlugin {
     public static final double MIN_DISTANCE = 0.3;
     public static boolean log = true;
     private static final HashMap<String, Drawer> MODELS = new HashMap<>();
-    public static final Particle PARTICLE = Particle.REDSTONE;
+    public static final Particle PARTICLE = Particle.REDSTONE; //Other particles also can be colored
 
     @Override
     public void onEnable() {
@@ -34,7 +34,7 @@ public class ParticleModels extends JavaPlugin {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if(sender instanceof Player) {
-            return CommandParser.parse((Player) sender, command, label, args);
+            return CommandParser.parse((Player) sender, command, label, args); //CommandParser works for Player only
         }
         return true;
     }
@@ -50,9 +50,9 @@ public class ParticleModels extends JavaPlugin {
             return false;
         }
         try {
-            Build build = new Build();
-            new Parse(build, file);
-            MODELS.put(name, new Drawer(build, name));
+            Build build = new Build(); //Library requires that
+            new Parse(build, file); //parsing file
+            MODELS.put(name, new Drawer(build, name)); //creating drawer
         } catch (IOException ex) {
             Bukkit.getLogger().log(Level.SEVERE, "Can't load model {0}", name);
             return false;

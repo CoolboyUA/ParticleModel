@@ -80,6 +80,8 @@ import org.bukkit.util.Vector;
  * @see RotationOrder
  * @since 1.2
  */
+
+//Copied class from apache math3, works with Bukkit Vector, all right belongs to their authors
 public class Rotation implements Serializable {
 
     /**

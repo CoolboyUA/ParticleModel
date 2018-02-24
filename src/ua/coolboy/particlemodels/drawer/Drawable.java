@@ -7,7 +7,7 @@ import org.bukkit.util.EulerAngle;
 import org.bukkit.util.Vector;
 
 public interface Drawable extends Callable<Void> {
-
+    //Interface for all Drawable methods
     public abstract void draw(Location location);
     public abstract Drawable scale(float scale);
     public abstract List<Vector> getPoints();
